@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS videos CASCADING;
+DROP TABLE IF EXISTS youtubers;
+
+CREATE TABLE youtubers (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL,
+  subscribers INTEGER NOT NULL,
+  description TEXT
+);
+
+CREATE videos (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  title TEXT NOT NULL,
+  length INTEGER CHECK (length > 0),
+  description TEXT,
+  youtuber_id BIGINT REFERENCES  youtubers(id)
+);
