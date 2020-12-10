@@ -58,9 +58,12 @@ describe('youtuber and video routes', () => {
       .get('/youtubers/1');
 
     expect(response.body).toEqual({
-      id: 1,
+      id: '1',
       ...vSauce,
-      videos: [firstVideo, secondVideo]
+      videos: [
+        { id: '1', ...firstVideo },
+        { id: '2', ...secondVideo }
+      ]
     });
   });
 
@@ -69,7 +72,7 @@ describe('youtuber and video routes', () => {
       .get('/videos/1');
 
     expect(response.body).toEqual({
-      id: 1,
+      id: '1',
       ...firstVideo
     });
   });
