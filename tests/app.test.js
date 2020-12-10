@@ -123,6 +123,19 @@ describe('youtuber and video routes', () => {
     });
   });
 
+  it('delete a video', async() => {
+    await request(app)
+      .delete('/videos/2');
+
+    const response = await request(app)
+      .delete('/videos/1');
+
+    expect(response.body).toEqual({
+      id: '1',
+      ...updatedFirstVideo
+    });
+  });
+
   it('delete a youtuber', async() => {
     const response = await request(app)
       .delete('/youtubers/1');
@@ -133,13 +146,5 @@ describe('youtuber and video routes', () => {
     });
   });
 
-  it('delete a video', async() => {
-    const response = await request(app)
-      .delete('/videos/1');
-
-    expect(response.body).toEqual({
-      id: '1',
-      ...updatedFirstVideo
-    });
-  });
+  
 });
