@@ -86,8 +86,8 @@ describe('youtuber and video routes', () => {
       .get('/youtubers');
 
     expect(response.body).toEqual([
-      { id: 1, ...vSauce },
-      { id: 2, ...veritasium }
+      { id: '1', ...vSauce },
+      { id: '2', ...veritasium }
     ]);
   });
 
