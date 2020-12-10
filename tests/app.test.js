@@ -93,7 +93,7 @@ describe('youtuber and video routes', () => {
       .get('/videos');
 
     expect(response.body).toEqual([
-      { id: 1, ...firstVideo},
+      { id: 1, ...firstVideo },
       { id: 2, ...secondVideo }
     ]);
   });
