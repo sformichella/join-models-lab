@@ -12,17 +12,20 @@
   "firstVideo": {
     "title": "Which Way Is Down?",
     "length": "26:11",
-    "description": "Explains gravity from multiple perspectives"
+    "description": "Explains gravity from multiple perspectives",
+    "youtuber_id": "1"
   },
   "updatedFirstVideo": {
     "title": "Which Way Is Down?",
     "length": "26:11",
-    "description": "Ultra super mega rad cool vid yo"
+    "description": "Ultra super mega rad cool vid yo",
+    "youtuber_id": "1"
   },
   "secondVideo": {
     "title": "How Many Holes Does A Human?",
     "length": "21:27",
-    "description": "About the topology of holes and what it means to have a hole"
+    "description": "About the topology of holes and what it means to have a hole",
+    "youtuber_id": "1"
   },
   "veritasium": {
     "name": "Veritasium",

@@ -11,7 +11,7 @@ CREATE TABLE youtubers (
 CREATE TABLE videos (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   title TEXT NOT NULL,
-  length INTEGER CHECK (length > 0),
+  length TEXT NOT NULL,
   description TEXT,
-  youtuber_id BIGINT REFERENCES  youtubers(id)
+  youtuber_id BIGINT REFERENCES youtubers(id)
 );
