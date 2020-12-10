@@ -17,8 +17,8 @@ const {
 describe('youtuber and video routes', () => {
 
   beforeAll(async() => {
-    const setupSQL = await fileSys.readFile('./sql/setup.sql');
-
+    const setupSQL = await fileSys.readFile('./sql/setup.sql', 'utf-8');
+ 
     await pool.query(setupSQL);
   });
 
