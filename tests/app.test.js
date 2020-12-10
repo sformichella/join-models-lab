@@ -96,8 +96,8 @@ describe('youtuber and video routes', () => {
       .get('/videos');
 
     expect(response.body).toEqual([
-      { id: 1, ...firstVideo },
-      { id: 2, ...secondVideo }
+      { id: '1', ...firstVideo },
+      { id: '2', ...secondVideo }
     ]);
   });
 
@@ -107,7 +107,7 @@ describe('youtuber and video routes', () => {
       .send(updatedVSauce);
 
     expect(response.body).toEqual({
-      id: 1,
+      id: '1',
       ...updatedVSauce
     });
   });
@@ -118,7 +118,7 @@ describe('youtuber and video routes', () => {
       .send(updatedFirstVideo);
 
     expect(response.body).toEqual({
-      id: 1,
+      id: '1',
       ...updatedFirstVideo
     });
   });
@@ -128,7 +128,7 @@ describe('youtuber and video routes', () => {
       .delete('/youtubers/1');
 
     expect(response.body).toEqual({
-      id: 1,
+      id: '1',
       ...updatedVSauce
     });
   });
@@ -138,7 +138,7 @@ describe('youtuber and video routes', () => {
       .delete('/videos/1');
 
     expect(response.body).toEqual({
-      id: 1,
+      id: '1',
       ...updatedFirstVideo
     });
   });
