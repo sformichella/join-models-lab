@@ -1,0 +1,32 @@
+{
+  "vSauce": {
+    "name": "Vsauce",
+    "subscribers": "16.3M",
+    "description": "Education channel focused on science and math"
+  },
+  "updatedVSauce": {
+    "name": "Vsauce",
+    "subscribers": "99M",
+    "description": "Education channel focused on science and math"
+  },
+  "firstVideo": {
+    "title": "Which Way Is Down?",
+    "length": "26:11",
+    "description": "Explains gravity from multiple perspectives"
+  },
+  "updatedFirstVideo": {
+    "title": "Which Way Is Down?",
+    "length": "26:11",
+    "description": "Ultra super mega rad cool vid yo"
+  },
+  "secondVideo": {
+    "title": "How Many Holes Does A Human?",
+    "length": "21:27",
+    "description": "About the topology of holes and what it means to have a hole"
+  },
+  "veritasium": {
+    "name": "Veritasium",
+    "subscribers": "7.92M",
+    "description": "Education channel focused on science and misconceptions"
+  }
+}
